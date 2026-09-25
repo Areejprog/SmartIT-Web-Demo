@@ -10,7 +10,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Login</title>
+    <title>Smart IT Login</title>
 
     <link
         rel="stylesheet"
@@ -24,71 +24,56 @@
 
 <div class="login-container">
 
-
     <img
         src="Images/Logo.png"
         class="logo"
     >
-
 
     <h1 class="login-title">
         Smart IT System
     </h1>
 
 
-    <form
-        id="loginForm"
-        onsubmit="login(event)"
-    >
+    <div class="input-group">
 
-
-        <div class="input-group">
-
-            <input
-                type="email"
-                id="username"
-                placeholder="Email"
-                autocomplete="username"
-                required
-            >
-
-        </div>
-
-
-        <div class="input-group">
-
-            <input
-                type="password"
-                id="password"
-                placeholder="Password"
-                autocomplete="current-password"
-                required
-            >
-
-        </div>
-
-
-        <button
-            type="submit"
-            class="login-btn"
+        <input
+            type="email"
+            id="username"
+            placeholder="Email"
         >
-            Login
-        </button>
+
+    </div>
 
 
-        <p
-            id="error"
-            class="error-message"
-        ></p>
+    <div class="input-group">
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+        >
+
+    </div>
 
 
-    </form>
+    <button
+        type="button"
+        class="login-btn"
+        onclick="login()"
+    >
+        Login
+    </button>
+
+
+    <p
+        id="error"
+        class="error-message"
+    ></p>
 
 
     <p class="subtitle">
         IT Asset & Ticket Management
     </p>
-
 
 </div>
 
