@@ -1,75 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+    <title>Login</title>
 
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Smart IT Login</title>
-
-    <link
-        rel="stylesheet"
-        href="CSS/login.css"
-    >
-
+    <link rel="stylesheet" href="CSS/login.css">
 </head>
-
-
 <body>
 
 <div class="login-container">
 
-    <img
-        src="Images/Logo.png"
-        class="logo"
-    >
+    <img src="Images/Logo.png" class="logo">
 
     <h1 class="login-title">
         Smart IT System
     </h1>
 
-
     <div class="input-group">
-
         <input
             type="email"
-            id="username"
-            placeholder="Email"
-        >
-
+            placeholder="Email">
     </div>
-
 
     <div class="input-group">
-
         <input
             type="password"
-            id="password"
-            placeholder="Password"
-        >
-
+            placeholder="Password">
     </div>
 
-
     <button
-        type="button"
         class="login-btn"
-        onclick="login()"
-    >
+        onclick="location.href='home.html'">
+
         Login
+
     </button>
-
-
-    <p
-        id="error"
-        class="error-message"
-    ></p>
-
 
     <p class="subtitle">
         IT Asset & Ticket Management
@@ -77,9 +41,5 @@
 
 </div>
 
-
-<script src="JS/login.js"></script>
-
 </body>
-
 </html>
